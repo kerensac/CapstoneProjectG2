@@ -1,0 +1,13 @@
+# app.yaml
+
+# If you're using App Engine Standard Environment
+# runtime: python39 # or nodejs18, java17, etc.
+# entrypoint: gunicorn -b :$PORT main:app
+
+# If you're using App Engine Flexible Environment (more likely if you're deploying a Docker image)
+runtime: custom # or python, nodejs, etc. for flexible if you're not using a custom Dockerfile
+env: flex
+# If you're pointing to an image in Artifact Registry:
+# beta_settings:
+#   container_image: "us-central1-docker.pkg.dev/your-project-id/your-repo-name/your-image:your-tag"
+
